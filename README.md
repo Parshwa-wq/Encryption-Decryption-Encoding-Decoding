@@ -28,6 +28,7 @@ The repository includes:
 - **Encoding Formats**:
   - Base64
   - UUEncode
+  - URL
 
 ## Installation
 
