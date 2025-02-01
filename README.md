@@ -17,6 +17,7 @@ The repository includes:
 - **XOR Cipher**: A symmetric cipher that uses the XOR bitwise operation.
 - **Base64 Encoding/Decoding**: Converts binary data into ASCII characters using a 64-character set.
 - **UUEncoding/Decoding**: A text-based encoding format used to represent binary data in ASCII characters.
+- **URL Encoding/Decoding: A text-based encoding scheme used to represent special characters in URLs using a combination of ASCII characters. It replaces unsafe or non-ASCII characters with a "%" followed by two hexadecimal digits that represent the character's ASCII code.
 
 ## Algorithms Supported
 
