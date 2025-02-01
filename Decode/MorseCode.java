@@ -193,6 +193,18 @@ class MorseCode_Decode
         System.out.print("Ciphertext: ");
         cipher=input.nextLine();
 
+         for(int i=0;i<cipher.length();i++)
+        {
+            char c=cipher.charAt(i);
+            if(c=='.' || c=='-')
+            {
+                continue;
+            }
+            else
+            System.out.print("Invalid input for MorseCode.\nTry again: ");
+            cipher=input.nextLine();
+        }
+
         decode(cipher.split(" "));
     }
 }
