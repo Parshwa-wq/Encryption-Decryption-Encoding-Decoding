@@ -1,16 +1,24 @@
 import java.util.*;
 class MorseCode_Decode
 {
-    static String plain="";
-    static String cipher="";
-
-    static void decode(String ...arr)
+    static void display(String plain)
     {
-        for(int i=0;i<arr.length;i++)
+        System.out.println("Plaintext: "+plain);
+    }
+    public static void main(String s[])
+    {
+        String cipher="";
+        String plain="";
+        Scanner input=new Scanner(System.in);
+        System.out.print("NOTE: TYPE LETTER BY LETTER (ONE_BY_ONE) & FOR EXIT PRESS 'X'.\nCiphertext: ");
+
+        while(true)
         {
-            String block=arr[i];
-            switch(block)
-            {
+            System.out.print("\n-->");
+            cipher=input.next();
+            
+                switch(cipher)
+                {
                 case ".-": 
                 plain += "A"; 
                 break;
@@ -179,32 +187,16 @@ class MorseCode_Decode
                 case "": 
                 plain += ""; 
                 break; 
+                case "X": 
+                display(plain); 
+                return;
+                case "x": 
+                display(plain); 
+                return;
                 default: 
-                plain+="";
+                System.out.print("Invalid"); 
                 break;    
             }
         }
-        System.out.println("plaintext: "+plain);
-    }
-
-    public static void main(String s[])
-    {
-        Scanner input=new Scanner(System.in);
-        System.out.print("Ciphertext: ");
-        cipher=input.nextLine();
-
-         for(int i=0;i<cipher.length();i++)
-        {
-            char c=cipher.charAt(i);
-            if(c=='.' || c=='-')
-            {
-                continue;
-            }
-            else
-            System.out.print("Invalid input for MorseCode.\nTry again: ");
-            cipher=input.nextLine();
-        }
-
-        decode(cipher.split(" "));
     }
 }
