@@ -6,7 +6,7 @@ This project contains implementations for various encryption and encoding techni
 
 The repository includes:
 - **Encryption Algorithms**: Caesar Cipher, ROT13, Vigenère Cipher, XOR Encryption
-- **Encoding Schemes**: Base64, UUEncoding
+- **Encoding Schemes**: Base64, UUEncoding, URLEncoding
 - **Decryption and Decoding**: Reverse operations for each algorithm
 
 ## Features
