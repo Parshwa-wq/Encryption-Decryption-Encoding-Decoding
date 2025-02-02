@@ -79,3 +79,4 @@ class base64_decode
         System.out.print("plaintext: "+plain);
     }
 }
+
