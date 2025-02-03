@@ -10,7 +10,7 @@ class binary
 
         String arr[]=new String[plain.length()];
 
-        System.out.print("Binar: ");
+        System.out.print("Binarytext: ");
         for(int i=0;i<plain.length();i++)
         {
             char c=plain.charAt(i);
