@@ -30,6 +30,8 @@ The repository includes:
   - Base64
   - UUEncode
   - URL
+  - Binary
+  - Morse Code
 
 ## Installation
 
