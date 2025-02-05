@@ -21,12 +21,12 @@ The repository includes:
 
 ## Algorithms Supported
 
-- **Encryption Algorithms**:
+- **Encryption/Decryption Algorithms**:
   - Caesar Cipher
   - ROT13
   - Vigenère Cipher
   - XOR Cipher
-- **Encoding Formats**:
+- **Encoding/Decoding Formats**:
   - Base64
   - UUEncode
   - URL
