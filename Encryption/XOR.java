@@ -22,11 +22,11 @@ class XOR
             {
                 char c=key.charAt(count);
                 count++;
+                key+=c;
                 if(count==key.length()-1)
                 {
                     count=0;
                 }
-                key+=c;
             }
         }
 
@@ -88,7 +88,7 @@ class XOR
                     continue;
                 }
             }
-            plain+=(char)(ascii);
+            plain+=(char)(ascii+32);
         }
         System.out.print("Ciphertext: "+cipher+"\n"+"Plaintext: "+plain);
     }
