@@ -10,13 +10,13 @@ class UUDecoding
         String plain="";
         int j=0;
 
-        for(int i=0;i<cipher.length();i++)
+        for(int i=1;i<cipher.length();i++)
         {
             int ascii=0;
             String binary="";
             char c=cipher.charAt(i);
 
-            if(c=='#')
+            if(c=='`')
             {
                 continue;
             }
