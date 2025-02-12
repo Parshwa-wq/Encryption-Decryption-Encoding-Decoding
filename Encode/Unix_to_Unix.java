@@ -3,12 +3,9 @@ class UUEncoding
 {
     static void block(String []arr,String plain)
     {
+        int padding=plain.length();
         String cipher="";
-        System.out.print("ciphertext: ");
-        if(plain.length()==3)
-        {
-            cipher="#"+cipher;
-        }
+        
         for(int i=0;i<arr.length;i++)
         {
             int ascii=0;
@@ -30,13 +27,21 @@ class UUEncoding
             
             cipher+=(char)(ascii+32); 
         }
-        System.out.print(cipher);
+        while(padding%3!=0)
+        {
+            cipher+="`";
+            padding++;
+        }
+
+        int totalBytes=plain.length()+32;
+        cipher=(char)totalBytes+cipher;
+        System.out.print("Ciphertext: "+cipher);
     }
     public static void main(String s[]) 
     {
         base64_encode obj=new base64_encode();
         Scanner input=new Scanner(System.in);
-        System.out.print("Enter something: ");
+        System.out.print("Plaintext: ");
         String plain=input.nextLine();
         String combined_binary="";
         int count=0;
@@ -58,7 +63,7 @@ class UUEncoding
             {
                 binary="0"+binary; 
             }
-            System.out.print(binary+" ");
+            //System.out.print(binary+" ");
             combined_binary+=binary;
         }
 
