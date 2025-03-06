@@ -34,6 +34,22 @@ The repository includes:
   - Morse Code
 
 ## Installation
+## How to Use
 
+To use or contribute to the systems in this repository, follow these simple steps:
+
+### 1. Clone the Repository
+
+```vb
+git clone 
+```
+### 2. Choose the System Method(Encryption/Decryption/Encode/Dcecode)
+-Select the system you want to work on from the available directories.
+-For example, to work with the Shopping_list_Tracker:
+
+```vb
+cd Encode
+cd Base64
+```
 ### Requirements:
 - **Java 8+**
