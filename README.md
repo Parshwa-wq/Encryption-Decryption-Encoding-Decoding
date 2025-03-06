@@ -33,7 +33,6 @@ The repository includes:
   - Binary
   - Morse Code
 
-## Installation
 ## How to Use
 
 To use or contribute to the systems in this repository, follow these simple steps:
@@ -41,15 +40,17 @@ To use or contribute to the systems in this repository, follow these simple step
 ### 1. Clone the Repository
 
 ```vb
-git clone 
+git clone https://github.com/Parshwa-wq/Encryption-Decryption-Encoding-Decoding.git
 ```
 ### 2. Choose the System Method(Encryption/Decryption/Encode/Dcecode)
--Select the system you want to work on from the available directories.
--For example, to work with the Shopping_list_Tracker:
+- Select the system you want to work on from the available directories.
+
+- For example, to work with the Shopping_list_Tracker:
 
 ```vb
 cd Encode
 cd Base64
 ```
-### Requirements:
+
+## Installation Requirements:
 - **Java 8+**
